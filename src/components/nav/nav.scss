@@ -10,6 +10,7 @@
     & figure {
         width: 15%;
     }
+
     & small {
         width: 450px;
         height: 1px;
@@ -46,7 +47,7 @@
 
             & span {
                 font-weight: bold;
-                
+
             }
 
             &:hover {
@@ -57,6 +58,59 @@
 
     }
 }
+
 .active {
     border-bottom: 2px solid white;
+}
+
+.hidden {
+    display: none;
+}
+.closeMenu {
+    display: none;
+}
+
+@media (max-width: 930px) {
+    .hidden {
+        display: block;
+        margin-right: 5%;
+        height: 30px;
+    }
+
+    .header {
+
+        & small {
+            display: none;
+        }
+        
+    }
+    .header__navBar{
+        padding: 0;
+        display: none;
+        position: fixed;
+        top: 0;
+        right:0;
+        & ul {
+            padding-left: 20%;
+            justify-content: start;
+            align-items: start;
+            flex-direction: column;
+            height: 100vh;
+            width: 50vw;
+            gap: 20;
+
+            & img {
+                align-self: end;
+                margin-top: 40px;
+                margin-right: 20px;
+                margin-bottom: 30px;
+            }
+        }
+        &__link{
+            height: 40px;
+        }
+    }
+    .open {
+        display: block;
+    }
 }
