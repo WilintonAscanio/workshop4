@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { NavLink, Outlet } from 'react-router-dom'
+import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 import { getDestination } from '../../services/getDestination'
+import "./destination.scss"
 
 
 const Destination = () => {
@@ -17,33 +18,21 @@ const Destination = () => {
 
     }, [])
     return (
-        <article>
-            <div>
-                <h1>Title</h1>
-                <figure>
-                    <img src="" alt="planeta" />
-                </figure>
-
-
-            </div>
-            <div>
+        <article className='destination'>
+            <p><span>01</span>PICK YOUR DESTINATION</p>
+            <section className='destination__nav'>
                 <nav>
                     <ul>
-                        {destination.map((planet, index) =>(
-                            <NavLink to={`${planet.name}`} key={index}
-                            description={planet.description}
-                            images={planet.images}
-                            travel={planet.travel}
-                            distance={planet.distance}
-                            name={planet.name}
-                            >{planet.name}</NavLink >
+                        {destination.map((planet, index) => (
+                            <NavLink to={`${planet.name}`} key={index} className='destination__nav__link'>{planet.name.toUpperCase()}</NavLink >
+
                         ))}
-                        
+
 
                     </ul>
                 </nav>
                 <Outlet />
-            </div>
+            </section>
         </article>
     )
 }

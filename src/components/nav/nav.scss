@@ -1,0 +1,116 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 95%;
+    margin: 2% 0% 0% 5%;
+    position: absolute;
+
+    & figure {
+        width: 15%;
+    }
+
+    & small {
+        width: 450px;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        left: 150px;
+        opacity: 0.25;
+    }
+
+    &__navBar {
+        display: flex;
+
+        & ul {
+            display: flex;
+            gap: 15px;
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(40.7742px);
+            height: 80px;
+            justify-content: center;
+            align-items: center;
+            width: 830px;
+        }
+
+
+        &__link {
+
+            text-decoration: none;
+            font-size: 16px;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            height: 100%;
+
+            & span {
+                font-weight: bold;
+
+            }
+
+            &:hover {
+                opacity: .5;
+            }
+
+        }
+
+    }
+}
+
+.active {
+    border-bottom: 2px solid white;
+}
+
+.hidden {
+    display: none;
+}
+.closeMenu {
+    display: none;
+}
+
+@media (max-width: 930px) {
+    .hidden {
+        display: block;
+        margin-right: 5%;
+        height: 30px;
+    }
+
+    .header {
+
+        & small {
+            display: none;
+        }
+        
+    }
+    .header__navBar{
+        padding: 0;
+        display: none;
+        position: fixed;
+        top: 0;
+        right:0;
+        & ul {
+            padding-left: 20%;
+            justify-content: start;
+            align-items: start;
+            flex-direction: column;
+            height: 100vh;
+            width: 50vw;
+            gap: 20;
+
+            & img {
+                align-self: end;
+                margin-top: 40px;
+                margin-right: 20px;
+                margin-bottom: 30px;
+            }
+        }
+        &__link{
+            height: 40px;
+        }
+    }
+    .open {
+        display: block;
+    }
+}
