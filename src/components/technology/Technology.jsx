@@ -16,7 +16,7 @@ const Technology = () => {
   return (
 
     <article className='technology'>
-      <p><span>03</span>SPACE LAUNCH 101</p>
+      <h5><span>03</span>SPACE LAUNCH 101</h5>
       <section>
       <nav>
         <ul>

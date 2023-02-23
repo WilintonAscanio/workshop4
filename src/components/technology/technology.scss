@@ -1,7 +1,7 @@
 .technology {
   background-image: url(../../assets/technology/background-technology-desktop.jpg);
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -10,14 +10,15 @@
   color: white;
   padding: 10% 0 10% 10%;
 
-  & p {
+  & h5 {
+    margin-top: 20px;
     display: flex;
     gap: 15px;
     font-size: 18px;
 
-    & span{
+    & span {
       font-weight: bold;
-      
+
     }
   }
 
@@ -54,7 +55,7 @@
       border-radius: 50%;
       font-size: 32px;
       border: none;
-      background-color: black;
+      background-color: #0B0D17;
       color: white;
 
       &:hover {
@@ -65,7 +66,70 @@
       }
 
 
+
     }
   }
 
+}
+
+.active {
+  & button {
+    background-color: white;
+    color: black;
+  }
+}
+
+@media (max-width: 1000px) {
+  .technology {
+    padding: 0;
+
+    & h5 {
+      position: absolute;
+      top: 20%;
+      left: 5%;
+      font-size: 20px;
+    }
+
+    & nav {
+      width: 0;
+
+
+      & ul {
+        left: 0;
+        position: absolute;
+        flex-direction: row;
+        width: 100%;
+        top: 550px;
+        justify-content: center;
+  
+
+      }
+    }
+    &__link{
+      height: 60px;
+      width: 60px;
+
+      & button {
+        font-size: 24px;
+      }
+    }
+  }
+}
+@media (max-width:670px){
+  .technology {
+    & h5 {
+      font-size: 16px;
+      width: 100%;
+      justify-content: center;
+      left: 0;
+    }
+    &__link {
+      height: 40px;
+      width: 40px;
+
+      & button {
+        font-size: 16px;
+      }
+    }
+  }
 }
