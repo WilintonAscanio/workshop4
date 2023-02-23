@@ -1,13 +1,15 @@
-.planet{
+.planet {
     display: flex;
     width: 100%;
 
     & h1 {
         font-size: 100px;
     }
+
     & p {
         font-size: 18px;
     }
+
     &__main {
         display: flex;
         justify-content: space-between;
@@ -18,7 +20,7 @@
             display: flex;
             justify-content: center;
         }
-       
+
         &__description {
             display: flex;
             flex-direction: column;
@@ -43,8 +45,10 @@
 
                     & small {
                         font-size: 14px;
+                        color: rgb(224, 214, 214);
 
                     }
+
                     & p {
                         font-size: 28px;
                     }
@@ -52,5 +56,71 @@
             }
         }
     }
-    
+
+}
+
+@media (max-width:1000px) {
+    .planet {
+        & h1 {
+            font-size: 80px;
+        }
+
+        & p {
+            font-size: 16px;
+        }
+
+        &__main {
+            flex-direction: column;
+            justify-content: center;
+
+            &__description {
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+            }
+
+            & figure img {
+                height: 300px;
+            }
+
+        }
+    }
+}
+
+@media (max-width:670px) {
+
+    .planet {
+        & h1 {
+            margin-top: 25%;
+            font-size: 56px;
+        }
+
+        & p {
+            font-size: 15px;
+        }
+
+        &__main {
+            & figure {
+                align-items: center;
+                height: 200px;
+
+                & img {
+                    height: 170px;
+                }
+            }
+
+            &__description {
+
+                & section {
+                    flex-direction: column;
+                    justify-content: center;
+
+                    & div {
+                        align-items: center;
+
+                    }
+                }
+            }
+        }
+    }
 }

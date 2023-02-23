@@ -18,7 +18,6 @@ const Planets = () => {
 
             .then((response) => {
                 setData(response)
-                console.log(response[0].images.png);
 
 
             })
@@ -36,7 +35,6 @@ const Planets = () => {
             {data.map((element, index) => (
                 <div key={index} className='planet__main'>
                     <figure>
-                        {console.log(element.images.png)}
                         <img src={element.images.png} alt="planeta" />
                     </figure>
                     <section className='planet__main__description'>

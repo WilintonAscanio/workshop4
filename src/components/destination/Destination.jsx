@@ -33,10 +33,6 @@ const Destination = () => {
                 </nav>
                 <Outlet />
             </section>
-
-
-
-
         </article>
     )
 }
