@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100%;
     color: white;
-    height: 100vh;
+    height: 100%;
     background-image: url(../../assets/home/background-home-desktop.jpg);
     background-position: center;
     background-size: cover;
@@ -152,7 +152,7 @@
             margin-top: 20%;
 
             &__right {
-                margin-bottom: 20%;
+                margin-bottom: 30%;
 
                 &__button {
                     margin-top: 0;
