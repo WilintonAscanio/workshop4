@@ -38,7 +38,7 @@ const Navbar = () => {
 
                     <NavLink to='/' className='header__navBar__link'><span>00</span> HOME </NavLink>
                     <NavLink to='destination/Moon' className='header__navBar__link'><span>01</span> DESTINATION </NavLink>
-                    <NavLink to='crew' className='header__navBar__link'><span>02</span> CREW </NavLink>
+                    <NavLink to='crew/Douglas Hurley' className='header__navBar__link'><span>02</span> CREW </NavLink>
                     <NavLink to='technology/Launch%20vehicle' className='header__navBar__link'><span>03</span> TECHNOLOGY </NavLink>
 
                 </ul>
