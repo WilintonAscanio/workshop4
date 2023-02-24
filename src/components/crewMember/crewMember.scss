@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap');
+
+
+
+
+.crewMember {
+    margin-top: 10%;
+    color: white;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    // background-color: rgb(63, 70, 55);
+
+    @media (max-width:768px) {
+        margin-top: 5%;
+    }
+
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-family: 'Bellefair', serif;
+
+        @media (max-width:960px){
+            margin-top: 140px;
+        }
+
+
+        & p {
+            font-family: 'Barlow', sans-serif;
+            font-size: 18px;
+            width: 70%;
+
+            @media (max-width:1000px) {
+                font-size: 16px;
+                width: 100%;
+                margin-bottom: 10%;
+
+            }
+
+            @media (max-width: 670px) {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+
+        & h1 {
+            font-weight: lighter;
+            font-size: 56px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            width: 100%;
+
+            @media (max-width:768px) {
+                font-size: 40px;
+            }
+
+            @media (max-width: 450px) {
+                font-size: 24px;
+                text-align: center;
+            }
+        }
+
+        & h4 {
+            font-size: 32px;
+            font-weight: 100;
+            color: #898989;
+            text-transform: uppercase;
+
+            @media (max-width:768px) {
+                font-size: 24px;
+                width: 100%;
+            }
+
+            @media (max-width: 450px) {
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+
+    }
+
+    &__info-h5 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        font-family: 'Barlow Condensed', sans-serif;
+
+        @media (max-width:768px) {
+            margin-top: 0;
+            margin-bottom: 80px;
+            position: relative;
+            
+        }
+
+        @media (max-width: 765px) {
+            margin-top: 80px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        @media (max-width:670px) {
+            margin-bottom: 0px;
+            
+        }
+
+        & span {
+            color: #898989;
+            font-size: 28px;
+            margin-right: 5px;
+
+            @media (max-width:768px) {
+                font-size: 20px;
+            }
+
+            @media (max-width: 450px) {
+                font-size: 16px;
+            }
+        }
+
+        & h5 {
+            font-size: 28px;
+            text-transform: uppercase;
+
+            @media (max-width:768px) {
+                font-size: 20px;
+
+            }
+
+            @media (max-width: 450px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+        
+        & figure {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            border-bottom: 1px solid gray;
+
+
+            & img {
+                height: 100%;
+                width: 385px;
+
+                @media (max-width:670px){
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            @media (max-width:670px){
+                height: 400px;
+                margin-top: 120px;
+                width: 300px;
+               
+            }
+
+            
+        }
+    }
+
+
+
+@media (max-width:990px) {
+    .crewMember {
+        flex-direction: column;
+    }
+}

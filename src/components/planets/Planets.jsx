@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation, useParams } from 'react-router-dom'
 import { getPlanet } from '../../services/getPlanet'
-// import img from "../../assets/destination/image-moon.png"
+import "./planets.scss"
+
 
 const Planets = () => {
 
@@ -29,20 +30,40 @@ const Planets = () => {
 
 
     return (
-        <>
+        <article className='planet'>
+
             {data.map((element, index) => (
-                <div key={index}>
+                <div key={index} className='planet__main'>
                     <figure>
-                        <img src={element.images.png} alt="imagen" />
+                        <img src={element.images.png} alt="planeta" />
                     </figure>
-                    <h1>{element.name}</h1>
-                    <p>{element.description}</p>
+                    <section className='planet__main__description'>
+                        <h1>{element.name.toUpperCase()}</h1>
+                        <p>{element.description}</p>
+                        <hr />
+
+                        <section>
+                            <div>
+                                <small>AVG. DISTANCE</small>
+                                <p>{element.distance.toUpperCase()}</p>
+                            </div>
+                            <div>
+                                <small>EST. TRAVEL TIME</small>
+                                <p>{element.travel.toUpperCase()}</p>
+                            </div>
+                        </section>
+
+                    </section>
+
+
 
                 </div>
 
             ))}
 
-        </>
+        </article>
+
+
     )
 }
 
