@@ -17,17 +17,19 @@
     @media (max-width: 450px) {
         background-image: url('../../assets/crew/background-crew-mobile.jpg');
     }
+
     & nav {
-        
+
         width: 80%;
         margin-bottom: 100px;
 
-        @media(max-width: 960px){
+        @media(max-width: 960px) {
             position: absolute;
             width: 140px;
             top: 750px;
         }
-        @media(max-width:670px){
+
+        @media(max-width:670px) {
             top: 730px;
         }
     }
@@ -41,7 +43,6 @@
     }
 
     &__nav {
-        background-color: #979797;
         top: 0;
         left: 0px;
         width: 15px;
@@ -53,16 +54,23 @@
             width: 25px;
             height: 25px;
             border-radius: 15px;
-            visibility: hidden;
-            color: rebeccapurple;
+            background-color: #979797;
+            cursor: pointer;
+
         }
 
-        
 
-       
+
+
     }
 }
 
 .active {
-    // background-color: #fff;
+
+    & button {
+        background-color: #fff;
+
+
+    }
+
 }
